@@ -75,7 +75,7 @@ header h1 {
 }
 .slogo{
   margin-left: -44px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   align-items: center;
   transition: 0.15s;
 }
@@ -89,22 +89,21 @@ header h1 {
   justify-content: center;
   align-items: center;
   display: flex;
-  flex: 1;
-  margin-left: 15px;
-  margin-right: -15px;
+  flex: 2;
+  margin-left: 5%;
+  
 }
 
 .search-bar {
   display: flex;
   width: 0;
   height: 2rem;
-
   font-size: 16px;
   padding-left: 15px;
   border-style: solid;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  flex: 1;
+  flex: 2;
   border-color: #4f46e5;
 }
 
@@ -133,16 +132,19 @@ header h1 {
 
 .right-section{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  width: 200px;
+  justify-content: end;
+  align-items: end;
+  flex: 1;
+  margin-right: 10px;
+  padding-right: 5px;
 }
 
 .order-btn {
   background-color: rgb(255, 255, 255);
   margin-right: 15px;
   margin-bottom: 1px;
+  line-height: 16px;
+  white-space: nowrap;
 }
 
 .return-txt {
@@ -160,14 +162,19 @@ header h1 {
 }
 
 .icon-img{
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.home-con{
+  display: flex;
 }
 
 .cart-con{
   position: relative;
   display: flex;
   flex-shrink: 0;
+
 }
 
 .cart-quantity{
@@ -177,6 +184,76 @@ header h1 {
   font-weight: bold;
   font-size: 13px;
   left: 40%;
+}
+
+
+@media(min-width:300px){
+  .container {
+  width: 92%;
+  margin-left: 65px;
+ 
+}
+
+
+.cart-quantity{
+  position: absolute;
+  color: #4f46e5;
+  top: -18%;
+  font-weight: bold;
+  font-size: 13px;
+  left: 45%;
+}
+
+}
+
+@media (max-width: 720px) {
+  .icon-img{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.slogo{
+  margin-left: -44px;
+  font-size: 1rem;
+  align-items: center;
+  transition: 0.15s;
+}
+
+
+.right-section{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex: 1;
+  margin-right: 10px;
+  padding-right: 5px;
+}
+
+.middle {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  margin-left: 4%;
+  margin-right: 3%;
+  
+}
+  .container {
+  width: 85%;
+  margin-left: 65px;
+ 
+}
+
+.cart-quantity{
+  position: absolute;
+  color: #4f46e5;
+  top: -40%;
+  font-weight: bold;
+  font-size: 11px;
+  left: 40%;
+}
+
+
 }
 
 
@@ -250,6 +327,8 @@ select {
   flex-direction: row;
 }
 
+
+
 .added-to-cart {
   color: rgb(6, 125, 98);
   font-size: 16px;
@@ -257,10 +336,6 @@ select {
   display: flex;
   align-items: center;
   margin-bottom: 8px;
-
-  /* At first, the "Added to cart" message will
-     be invisible. Use JavaScript to change the
-     opacity and make it visible. */
   opacity: 0;
 }
 
@@ -317,6 +392,44 @@ button:hover {
 
 button:active{
   scale: 1.1;
+}
+
+@media (min-width:300px){
+
+}
+
+@media(max-width:720px){
+  .item-rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
+
+.item-rating-stars {
+  width: 100px;
+  margin-left: 31%;
+}
+
+select {
+  color: rgb(33, 33, 33);
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(213, 217, 217);
+  border-radius: 8px;
+  padding: 3px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+  
+}
+
+.price{
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: -4.5%;
+  
+}
+
 }
 
 /* Responsive spacing */

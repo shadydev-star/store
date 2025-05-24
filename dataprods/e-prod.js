@@ -1,7 +1,7 @@
-const prod = [
+const products = [
 
   {
-    id: "e43638ce-6aa0-4b85-b27f-e1d07eb618c6",
+    id: "e43638ce-6aa9-4b85-b27f-e1d07eb618c6",
     image: "e-prods/13 promax.jpg",
     name: "Iphone 13 pro max",
     rating: {
@@ -265,6 +265,6 @@ const prod = [
   }
 ];
 
-if (!localStorage.getItem('prod')) {
-  localStorage.setItem('prod', JSON.stringify(prod));
+if (!localStorage.getItem('products')) {
+  localStorage.setItem('products', JSON.stringify(products));
 }

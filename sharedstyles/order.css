@@ -1,0 +1,388 @@
+ body {
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+    .contain {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      max-width: 1100px;
+      margin: 40px auto;
+      margin-top: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+     
+    }
+    #cart-section{
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 10px;
+      gap: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .orde-txt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #4f46e5;
+    
+    }
+
+    #grid-sec{
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      max-width: 1100px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .descp-txt{
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      margin-right: 40px;
+      margin-left: 40px;
+      
+    }
+    
+    .track-txt{
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      flex: 0.5;
+      
+    }
+
+    
+
+    h2, h3, h4{
+      font-size: 26px;
+    }
+    #cart-section {
+      flex: 1;
+    }
+
+    .order-con{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex: 0.5;
+      
+    }
+
+    .desc-con{
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    .track-con{
+      display: flex;
+      justify-content: flex-end;
+      justify-content: center;
+      align-items: center;
+      flex: 0.5;
+     
+    }
+    .tracking-con{
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+   
+
+    .track-pic{
+      width: 29px;
+    }
+    .track-img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+    
+    .tracking-id{
+      font-size: 11px;
+    }
+
+    .track-btn{
+      color: white;
+      background-color: #4f46e5;
+      border-style:none;
+      border-radius: 5px;
+      padding: 4px;
+      font-size: 9px;
+      cursor: pointer;
+    }
+  
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+    }
+    .cart-item img {
+      width: 60px;
+      border-radius: 6px;
+      padding-right: 15px;
+    }
+
+    .img-con{
+      width: 80px;
+    }
+    .order-img{
+     max-width: 100%;
+     max-height: 100%;
+    }
+
+
+    
+
+
+    .container {
+  margin-left: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+/* Header */
+header {
+ 
+  background: var(--card-bg);
+  padding: 20px 0;
+  box-shadow: var(--shadow);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  top: 0;
+  height: 32px;
+  background-color: white;
+  }
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5px;
+}
+
+header h1 {
+  color: var(--primary-color);
+}
+.slogo{
+  margin-left: -55px;
+  font-size: 1.5rem;
+  align-items: center;
+  transition: 0.15s;
+}
+.slogo:hover{
+  border-style: solid;
+  border-width: 2px;
+  padding: 2px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.middle {
+  flex: 1;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+
+.search-bar {
+  flex: 1;
+  width: 0;
+  font-size: 16px;
+  height: 38px;
+  padding-left: 1px;
+  border-style: solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  
+  border-color: #4f46e5;
+}
+
+.search-btn {
+  background-color: #4f46e5;
+  border: none;
+  width: 45px;
+  height: 44px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  flex-shrink: 0;
+  margin-left: -10px;
+}
+
+.search-pic {
+  height: 30px;
+  margin-left: 6px;
+  margin-top: 4px;
+}
+
+
+
+.right-section{
+  display: flex;
+
+  justify-content: end;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.order-btn {
+  margin-right: 15px;
+  margin-bottom: 1px;
+  line-height: 8px;
+}
+
+.return-txt {
+  display: block;
+  font-size: 0.7rem;
+  color: #4f46e5;
+  margin-bottom: -9%;
+}
+
+.order-txt {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+.icon-img{
+  height: 40px;
+}
+
+.cart-con{
+  position: relative;
+  display: flex;
+}
+
+
+.itum{
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4f46e5;
+}
+.cart-quantity{
+
+  color: #4f46e5;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cart-icon-quantity{
+  position: absolute;
+  color: #4f46e5;
+  top: -40%;
+  font-weight: bold;
+  font-size: 11px;
+  left: 40%;
+}
+
+@media(min-width:300px){
+  .container {
+  width: 92%;
+  margin-left: 65px;
+ 
+}
+
+.cart-icon-quantity{
+  position: absolute;
+  color: #4f46e5;
+  top: -18%;
+  font-weight: bold;
+  font-size: 13px;
+  left: 45%;
+}
+
+}
+
+@media (max-width: 720px) {
+  .icon-img{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+  .container {
+  width: 85%;
+  margin-left: 65px;
+ 
+}
+
+.cart-icon-quantity{
+  position: absolute;
+  color: #4f46e5;
+  top: -40%;
+  font-weight: bold;
+  font-size: 11px;
+  left: 40%;
+}
+
+.right-section{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex: 1;
+  margin-right: 10px;
+  padding-right: 5px;
+}
+
+.order-btn {
+  margin-right: 15px;
+  margin-bottom: 1px;
+  line-height: 3px;
+}
+
+
+.middle {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  margin-left: 4%;
+  margin-right: 3%;
+  
+}
+
+.slogo{
+  margin-left: -44px;
+  font-size: 1rem;
+  align-items: center;
+  transition: 0.15s;
+}
+
+
+}

@@ -1,4 +1,5 @@
 // checkout.js
+
 document.addEventListener('DOMContentLoaded', () => {
   // Load cart - initialize as empty array if null
   let cart = JSON.parse(localStorage.getItem('cart'));

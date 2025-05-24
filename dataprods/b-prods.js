@@ -3,7 +3,7 @@ const bprods = [
     id: "20c8d3e5-1d84-4458-87ad-9b511f26cbf4",
     image: "b-prods/adhesive hooks.jpg",
     name: "Adhesive Hooks",
-    rating: { stars: 4.3, count: 481 },
+    rating: { stars: 4.5, count: 481 },
     priceCents: 859,
     keywords: ["bathroom", "organizer", "hooks"]
   },
@@ -11,7 +11,7 @@ const bprods = [
     id: "4fcae8b7-c623-4d77-a47c-6899853c912c",
     image: "b-prods/bathroom rug.jpg",
     name: "Bathroom Rug",
-    rating: { stars: 4.6, count: 732 },
+    rating: { stars: 4.5, count: 732 },
     priceCents: 1867,
     keywords: ["bathroom", "rug", "mat"]
   },
@@ -19,7 +19,7 @@ const bprods = [
     id: "c31a36d2-5e34-42c2-9a8b-52b93e2d68cb",
     image: "b-prods/bathroom shelves.jpg",
     name: "Bathroom Shelves",
-    rating: { stars: 4.4, count: 394 },
+    rating: { stars: 4.5, count: 394 },
     priceCents: 2784,
     keywords: ["bathroom", "storage", "organizer"]
   },
@@ -27,7 +27,7 @@ const bprods = [
     id: "fbc7e329-6db5-4d45-9234-1f5c16597b71",
     image: "b-prods/bathtub and shower maths.jpg",
     name: "Bathtub and Shower Maths",
-    rating: { stars: 4.1, count: 308 },
+    rating: { stars: 4.0, count: 308 },
     priceCents: 1576,
     keywords: ["bathroom", "shower", "mat"]
   },
@@ -35,7 +35,7 @@ const bprods = [
     id: "3b47b3ae-f36d-490c-8c6f-e458a6a77cb6",
     image: "b-prods/cotton swabs dispenser.jpg",
     name: "Cotton Swabs Dispenser",
-    rating: { stars: 4.8, count: 654 },
+    rating: { stars: 5, count: 654 },
     priceCents: 1149,
     keywords: ["bathroom", "storage", "cotton", "organizer"]
   },
@@ -43,7 +43,7 @@ const bprods = [
     id: "175cde1d-9bbf-4a88-8f12-568781a0e184",
     image: "b-prods/night lights plug.jpg",
     name: "Night Lights Plug",
-    rating: { stars: 4.7, count: 389 },
+    rating: { stars: 4.5, count: 389 },
     priceCents: 1623,
     keywords: ["bathroom", "light", "safety"]
   },
@@ -59,7 +59,7 @@ const bprods = [
     id: "f08f0027-b7b2-4e88-9f57-70b6a08ea0ae",
     image: "b-prods/shower bath organiser.jpg",
     name: "Shower Bath Organiser",
-    rating: { stars: 4.6, count: 519 },
+    rating: { stars: 3.5, count: 519 },
     priceCents: 2472,
     keywords: ["bathroom", "shower", "organizer"]
   },
@@ -67,7 +67,7 @@ const bprods = [
     id: "ec011e3e-e6e6-4e8a-bdd4-ff74f3749e69",
     image: "b-prods/shower curtain.jpg",
     name: "Shower Curtain",
-    rating: { stars: 4.4, count: 621 },
+    rating: { stars: 4.5, count: 621 },
     priceCents: 1901,
     keywords: ["bathroom", "shower", "curtain"]
   },
@@ -75,7 +75,7 @@ const bprods = [
     id: "ab6ff6cf-1966-4c02-b2e2-50e7275a2450",
     image: "b-prods/showerhead with 6 modes.jpg",
     name: "Showerhead with 6 Modes",
-    rating: { stars: 4.7, count: 843 },
+    rating: { stars: 4.5, count: 843 },
     priceCents: 3268,
     keywords: ["bathroom", "shower", "showerhead"]
   },
@@ -83,7 +83,7 @@ const bprods = [
     id: "fa009f52-e989-4767-b1c4-372d4ebc9267",
     image: "b-prods/smart scale.jpg",
     name: "Smart Scale",
-    rating: { stars: 4.2, count: 399 },
+    rating: { stars: 4.0, count: 399 },
     priceCents: 2895,
     keywords: ["bathroom", "scale", "fitness"]
   },
@@ -91,7 +91,7 @@ const bprods = [
     id: "02e7a981-8d7e-412e-9db6-b8f8f8fc52f2",
     image: "b-prods/toilet paper holder.jpg",
     name: "Toilet Paper Holder",
-    rating: { stars: 4.3, count: 537 },
+    rating: { stars: 4.5, count: 537 },
     priceCents: 1394,
     keywords: ["bathroom", "toilet", "holder"]
   },
@@ -99,7 +99,7 @@ const bprods = [
     id: "d93a1863-7430-4be9-a2f3-c3f814efc334",
     image: "b-prods/toilet plunger brush set.jpg",
     name: "Toilet Plunger Brush Set",
-    rating: { stars: 4.6, count: 618 },
+    rating: { stars: 4.5, count: 618 },
     priceCents: 2225,
     keywords: ["bathroom", "toilet", "cleaning"]
   },
@@ -107,7 +107,7 @@ const bprods = [
     id: "6d08d55f-2d56-4a12-85bb-dc88d2020e69",
     image: "b-prods/tootbrush holder.jpg",
     name: "Toothbrush Holder",
-    rating: { stars: 4.4, count: 441 },
+    rating: { stars: 4.5, count: 441 },
     priceCents: 1057,
     keywords: ["bathroom", "toothbrush", "organizer"]
   },
@@ -120,3 +120,7 @@ const bprods = [
     keywords: ["bathroom", "trash", "bin"]
   }
 ];
+
+if (!localStorage.getItem('bprods')) {
+  localStorage.setItem('bprods', JSON.stringify(bprods));
+}

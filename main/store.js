@@ -1,5 +1,6 @@
 // store.js
 // At the beginning of the file:
+
 if (!localStorage.getItem('cart')) {
   localStorage.setItem('cart', JSON.stringify([]));
 }

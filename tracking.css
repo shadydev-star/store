@@ -1,0 +1,76 @@
+ .progress-labels-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+  margin:10px;
+}
+
+.current-status {
+  color: #4f46e5;
+}
+
+@media (max-width: 575px) {
+  .progress-labels-container {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .progress-labels-container {
+    flex-direction: row;
+    margin-bottom: 5px;
+  }
+
+  .progress-label {
+    margin-bottom: 3px;
+  }
+}
+
+.progress-bar-container {
+  height: 25px;
+  width: 100%;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4f46e5;
+  border-radius: 50px;
+  width: 50%;
+}
+
+.main{
+  margin-top: 90px;
+}
+.prod-con{
+  margin-top: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 5px;
+  gap: 10px;
+  .delivery-date{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  .prod-name{
+    font-weight: bold;
+    margin:10px;
+  }
+  .prod-quantity{
+    font-weight: bold;
+    margin: 10px;
+  }
+  .prod-img-con{
+  width: 80px;
+  margin: 15px;
+  .prod-img{
+    width: 100%;
+  }
+}
+}
+

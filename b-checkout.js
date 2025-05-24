@@ -1,10 +1,10 @@
 // checkout.js
 document.addEventListener('DOMContentLoaded', () => {
   // Load cart - initialize as empty array if null
-  let eCart = JSON.parse(localStorage.getItem('eCart')) || [];
+  let bCart = JSON.parse(localStorage.getItem('bCart')) || [];
   
   // Load products from localStorage
-  const products = JSON.parse(localStorage.getItem('prod')) || [];
+  const products = JSON.parse(localStorage.getItem('bprods')) || [];
 
   // Get DOM elements
   const cartContainer = document.getElementById('cart-items');
@@ -19,15 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to remove item from cart
   function removeFromCart(productId) {
-    eCart = eCart.filter(item => item.productId !== productId);
-    localStorage.setItem('eCart', JSON.stringify(eCart));
+    bCart = bCart.filter(item => item.productId !== productId);
+    localStorage.setItem('bCart', JSON.stringify(bCart));
     renderCart(); // Re-render the cart after removal
     updateCartQuantity(); // Update the cart quantity display
   }
 
   // Function to update cart quantity in header
   function updateCartQuantity() {
-    const quantity = eCart.reduce((total, item) => total + item.quantity, 0);
+    const quantity = bCart.reduce((total, item) => total + item.quantity, 0);
     const quantityElements = document.querySelectorAll('.js-cart-quantity');
     quantityElements.forEach(element => {
       element.textContent = quantity;
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let totalItems = 0;
     let subtotal = 0;
 
-    if (eCart.length === 0) {
+    if (bCart.length === 0) {
       cartContainer.innerHTML = '<p>Your cart is empty.</p>';
       summaryItems.textContent = '0';
       summarySubtotal.textContent = '$0.00';
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    eCart.forEach(item => {
+    bCart.forEach(item => {
       const product = products.find(p => p.id === item.productId);
       if (!product) return;
 
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Listen for cart updates from other tabs
   window.addEventListener('storage', () => {
-    eCart = JSON.parse(localStorage.getItem('eCart')) || [];
+    bCart = JSON.parse(localStorage.getItem('bCart')) || [];
     renderCart();
     updateCartQuantity();
   });

@@ -1,7 +1,7 @@
 // checkout.js
 document.addEventListener('DOMContentLoaded', () => {
   // Load cart - initialize as empty array if null
-  let eCart = JSON.parse(localStorage.getItem('kCart')) || [];
+  let kCart = JSON.parse(localStorage.getItem('kCart')) || [];
   
   // Load products from localStorage
   const products = JSON.parse(localStorage.getItem('kprods')) || [];
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Function to remove item from cart
   function removeFromCart(productId) {
     kCart = kCart.filter(item => item.productId !== productId);
-    localStorage.setItem('eCart', JSON.stringify(kCart));
+    localStorage.setItem('kCart', JSON.stringify(kCart));
     renderCart(); // Re-render the cart after removal
     updateCartQuantity(); // Update the cart quantity display
   }
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Listen for cart updates from other tabs
   window.addEventListener('storage', () => {
-    eCart = JSON.parse(localStorage.getItem('eCart')) || [];
+    kCart = JSON.parse(localStorage.getItem('kCart')) || [];
     renderCart();
     updateCartQuantity();
   });

@@ -1,17 +1,16 @@
-// cart.js
-
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
+let bCart = JSON.parse(localStorage.getItem('bCart')) || [];
 
 function saveToStorage() {
-  localStorage.setItem('cart', JSON.stringify(cart));
+  localStorage.setItem('bCart', JSON.stringify(bCart));
 }
 
+
 function addToCart(productId, quantity = 1) {
-  const existingItem = cart.find(item => item.productId === productId);
+  const existingItem = bCart.find(item => item.productId === productId);
   if (existingItem) {
     existingItem.quantity += quantity;
   } else {
-    cart.push({ productId, quantity });
+    bCart.push({ productId, quantity });
   }
   saveToStorage();
   updateCartQuantityDisplay();
@@ -21,18 +20,18 @@ function addToCart(productId, quantity = 1) {
 }
 
 function removeFromCart(productId) {
-  cart = cart.filter(item => item.productId !== productId);
+  bCart = bCart.filter(item => item.productId !== productId);
   saveToStorage();
   updateCartQuantityDisplay();
   window.dispatchEvent(new Event('cartUpdated'));
 }
 
 function updateCartQuantityDisplay() {
-  const quantity = cart.reduce((total, item) => total + item.quantity, 0);
-  const quantityElement = document.querySelector('.js-cart-quantity');
-  if (quantityElement) {
-    quantityElement.textContent = quantity;
-  }
+  const quantity = bCart.reduce((total, item) => total + item.quantity, 0);
+  const quantityElements = document.querySelectorAll('.js-cart-quantity');
+  quantityElements.forEach(element => {
+    element.textContent = quantity;
+  });
 }
 
 // Initialize on page load
