@@ -1,11 +1,11 @@
 /* styles.css */
 :root {
-  --primary-color: #4f46e5;
+  --primary-color: #d82929;
   --background: #f9fafb;
   --text: #1f2937;
-  --card-bg: #ffffff;
+  --card-bg: #fdfbfb;
   --border-radius: 12px;
-  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow: 0 2px 8px rgba(24, 13, 13, 0.384);
 }
 
 * {
@@ -104,11 +104,11 @@ header h1 {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   flex: 2;
-  border-color: #4f46e5;
+  border-color: #d82929;
 }
 
 .search-btn {
-  background-color: #4f46e5;
+  background-color: #d82929;
   border: none;
  width: 2rem;
  height: 2rem;
@@ -150,7 +150,7 @@ header h1 {
 .return-txt {
   display: block;
   font-size: 0.7rem;
-  color: #4f46e5;
+  color: #d82929;
   margin-bottom: -9%;
 }
 
@@ -158,7 +158,7 @@ header h1 {
   display: block;
   font-size: 0.8rem;
   font-weight: 700;
-  color: #4f46e5;
+  color: #d82929;
 }
 
 .icon-img{
@@ -179,7 +179,7 @@ header h1 {
 
 .cart-quantity{
   position: absolute;
-  color: #4f46e5;
+  color: #d82929;
   top: -40%;
   font-weight: bold;
   font-size: 13px;
@@ -197,7 +197,7 @@ header h1 {
 
 .cart-quantity{
   position: absolute;
-  color: #4f46e5;
+  color: #d82929;
   top: -18%;
   font-weight: bold;
   font-size: 13px;
@@ -246,7 +246,7 @@ header h1 {
 
 .cart-quantity{
   position: absolute;
-  color: #4f46e5;
+  color: #d82929;
   top: -40%;
   font-weight: bold;
   font-size: 11px;
@@ -387,7 +387,7 @@ button {
 }
 
 button:hover {
-  background: #4338ca;
+  background: #d82929;
 }
 
 button:active{
@@ -456,7 +456,7 @@ select {
   left: 0;
   width: 60px;
   height: 100vh;
-  background-color: #4338ca;
+  background-color: #d82929;
   color: white;
   
   overflow: hidden;
