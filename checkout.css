@@ -1,4 +1,15 @@
- body {
+
+    :root {
+      --primary-color: #d82929;
+      --background: #f9fafb;
+      --text: #1f2937;
+      --card-bg: #fdfbfb;
+      --border-radius: 12px;
+      --shadow: 0 2px 8px rgba(24, 13, 13, 0.384);
+    }
+
+
+body {
       font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       background-color: #f5f7fa;
       color: #333;
@@ -42,7 +53,7 @@
       margin-left: 40px;
     }
     .remove-btn {
-      background-color: #ff4d4d;
+      background-color: var(--primary-color);
       color: white;
       border: none;
       border-radius: 6px;
@@ -59,7 +70,7 @@
     }
     .checkout-btn {
       width: 100%;
-      background-color: #5c6ac4;
+      background-color: var(--primary-color);
       color: white;
       border: none;
       border-radius: 6px;
@@ -182,7 +193,7 @@ a{
 .return-txt {
   display: block;
   font-size: 0.7rem;
-  color: #4f46e5;
+  color: #d82929;
   margin-bottom: -9%;
 }
 
@@ -190,7 +201,7 @@ a{
   display: block;
   font-size: 0.8rem;
   font-weight: 700;
-  color: #4f46e5;
+  color: #d82929;
 }
 
 .icon-img{
@@ -205,11 +216,11 @@ a{
 
 .itum{
   font-size: 18px;
-  color: #4f46e5;
+  color: #d82929;
 }
 .cart-quantity{
 
-  color: #4f46e5;
+  color: #d82929;
   margin-right: 10px;
   font-weight: bold;
   font-size: 16px;

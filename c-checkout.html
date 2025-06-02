@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - ShadyStores</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+   <header>
+      <div class="container">
+        <a href="index.html" class="link">
+           <h1 class="slogo" >ShadyStores</h1>
+        </a>
+       
+
+         <div class="middle"> 
+
+           <div class="cart-quantity js-cart-quantity">
+              
+             </div>
+             <a href="clothes.html">
+              <div class="itum">
+               Item(s)
+             </div>
+             </a>
+             
+
+             
+            
+    </div>
+
+
+        <div class="right-section">
+
+          <div class="order-btn">
+        <h1 class="return-txt">
+          Returns 
+        </h1>
+         <p class="order-txt">
+          <span>& Orders </span> 
+        </p>
+       
+          </div>
+
+           <img class="icon-img" src="icons/home-svgrepo-com.svg" alt="">
+
+           </div>
+        </a>
+        </div>
+         
+        
+      </div>
+    </header> 
+
+
+  <div class="contain">
+    <div class="cart-section">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+    </div>
+    <div class="summary-section">
+      <h3>Order Summary</h3>
+      <div class="summary-line">
+        <span>Items:</span><span id="summary-items">0</span>
+      </div>
+      <div class="summary-line">
+        <span>Subtotal:</span><span id="summary-subtotal">$0.00</span>
+      </div>
+      <div class="summary-line">
+        <strong>Total:</strong><strong id="summary-total">$0.00</strong>
+      </div>
+      <button class="checkout-btn">Proceed to Orders</button>
+    </div>
+  </div>
+
+  <script src="dataprods/c-prods.js"></script>
+<script src="carts/c-cart.js"></script>
+<script src="c-checkout.js"></script>
+
+</body>
+</html>

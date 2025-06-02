@@ -1,4 +1,13 @@
- body {
+    :root {
+    --primary-color: #d82929;
+    --background: #f9fafb;
+    --text: #1f2937;
+    --card-bg: #fdfbfb;
+    --border-radius: 12px;
+    --shadow: 0 2px 8px rgba(24, 13, 13, 0.384);
+    }
+
+body {
       font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       background-color: #f5f7fa;
       color: #333;
@@ -32,7 +41,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #4f46e5;
+      color: #d82929;
     
     }
 
@@ -163,7 +172,7 @@
 
     .track-btn{
       color: white;
-      background-color: #4f46e5;
+      background-color: #d82929;
       border-style:none;
       border-radius: 5px;
       padding: 4px;
@@ -268,11 +277,11 @@ a{
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   
-  border-color: #4f46e5;
+  border-color: #d82929;
 }
 
 .search-btn {
-  background-color: #4f46e5;
+  background-color: #d82929;
   border: none;
   width: 45px;
   height: 44px;
@@ -307,7 +316,7 @@ a{
 .return-txt {
   display: block;
   font-size: 0.7rem;
-  color: #4f46e5;
+  color: #d82929;
   margin-bottom: -9%;
 }
 
@@ -315,7 +324,7 @@ a{
   display: block;
   font-size: 0.8rem;
   font-weight: 700;
-  color: #4f46e5;
+  color: #d82929;
 }
 
 .icon-img{
@@ -333,11 +342,11 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #4f46e5;
+  color: #d82929;
 }
 .cart-quantity{
 
-  color: #4f46e5;
+  color: #d82929;
   margin-right: 10px;
   font-weight: bold;
   font-size: 16px;
@@ -345,7 +354,7 @@ a{
 
 .cart-icon-quantity{
   position: absolute;
-  color: #4f46e5;
+  color: #d82929;
   top: -40%;
   font-weight: bold;
   font-size: 11px;
@@ -361,7 +370,7 @@ a{
 
 .cart-icon-quantity{
   position: absolute;
-  color: #4f46e5;
+  color: #d82929;
   top: -18%;
   font-weight: bold;
   font-size: 13px;
@@ -384,7 +393,7 @@ a{
 
 .cart-icon-quantity{
   position: absolute;
-  color: #4f46e5;
+  color: #d82929;
   top: -40%;
   font-weight: bold;
   font-size: 11px;
