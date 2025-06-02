@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!cart) {
     cart = [];
     localStorage.setItem('cart', JSON.stringify(cart));
+
+    
+
   }
 
 
@@ -46,6 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add Order Date, Delivery Date, and Place Order Button
   const currentDate = new Date().toISOString().split('T')[0];
   const deliveryDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+
+  localStorage.setItem('orderDate', new Date().toISOString());
 
 
     const itemTotal = product.priceCents * item.quantity;
